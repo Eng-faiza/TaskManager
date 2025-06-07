@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm install --legacy-peer-deps",
+  "installCommand": "cd frontEnd && npm install --legacy-peer-deps",
   "version": 2,
   "builds": [
     {
@@ -7,14 +7,14 @@
       "use": "@vercel/node"
     },
     {
-      "src": "src/**/*",
+      "src": "frontEnd/**/*",
       "use": "@vercel/static"
     }
   ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/frontEnd/index.html"
     }
   ]
 }

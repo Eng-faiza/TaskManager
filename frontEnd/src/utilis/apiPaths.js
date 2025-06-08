@@ -1,4 +1,4 @@
-export const BASE_URL =process.env.BASE_URL_ENV;
+export const BASE_URL =process.env.VITE_BASE_URL;
 
 // utils /apiPaths.js
 export const API_PATHS={

@@ -1,4 +1,4 @@
-export const BASE_URL =process.env.VITE_BASE_URL;
+export const BASE_URL ="https://taskmanager-backend-85jr.onrender.com";
 
 // utils /apiPaths.js
 export const API_PATHS={

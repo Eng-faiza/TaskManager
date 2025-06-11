@@ -37,13 +37,14 @@ app.use("/api/reports", reportRoutes);
 //serve uploads folder // displays image 
 app.use("/uploads",express.static(path.join(__dirname,"uploads")));
 
-//Serve frontend build files (Vite)
-app.use(express.static(path.join(__dirname, "../frontEnd/dist")));
+// // Serve frontend build files (Vite)
+// app.use(express.static(path.join(__dirname, "dist"))); // ✅ Update
 
-// Catch-all route: always return index.html for SPA routes
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontEnd/dist", "index.html"));
-});
+// // Catch-all route: always return index.html for SPA routes
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(__dirname, "dist", "index.html")); // ✅ Update
+// });
+
 
 // start server 
 const PORT = process.env.PORT || 5000;
